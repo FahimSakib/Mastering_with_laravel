@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'frontend\HomeController@index');
+Route::get('about', 'frontend\AboutController@index')->name('about');
+Route::get('properties', 'frontend\PropertiesController@index')->name('properties');
+Route::get('blog', 'frontend\BlogController@index')->name('blog');
+Route::get('contact', 'frontend\ContactController@index')->name('contact');
 
 
 

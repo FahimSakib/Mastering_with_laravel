@@ -24,7 +24,7 @@
             <nav class="classy-navbar justify-content-between" id="southNav">
 
                 <!-- Logo -->
-                <a class="nav-brand" href="index.html"><img src="asset/frontend/img/core-img/logo.png" alt=""></a>
+                <a class="nav-brand" href="{{ url('/') }}"><img src="asset/frontend/img/core-img/logo.png" alt=""></a>
 
                 <!-- Navbar Toggler -->
                 <div class="classy-navbar-toggler">
@@ -42,67 +42,11 @@
                     <!-- Nav Start -->
                     <div class="classynav">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Pages</a>
-                                <ul class="dropdown">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about-us.html">About Us</a></li>
-                                    <li><a href="#">Listings</a>
-                                        <ul class="dropdown">
-                                            <li><a href="listings.html">Listings</a></li>
-                                            <li><a href="single-listings.html">Single Listings</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Blog</a>
-                                        <ul class="dropdown">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="single-blog.html">Single Blog</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="elements.html">Elements</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="listings.html">Properties</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="#">Mega Menu</a>
-                                <div class="megamenu">
-                                    <ul class="single-mega cn-col-4">
-                                        <li class="title">Headline 1</li>
-                                        <li><a href="#">Mega Menu Item 1</a></li>
-                                        <li><a href="#">Mega Menu Item 2</a></li>
-                                        <li><a href="#">Mega Menu Item 3</a></li>
-                                        <li><a href="#">Mega Menu Item 4</a></li>
-                                        <li><a href="#">Mega Menu Item 5</a></li>
-                                    </ul>
-                                    <ul class="single-mega cn-col-4">
-                                        <li class="title">Headline 2</li>
-                                        <li><a href="#">Mega Menu Item 1</a></li>
-                                        <li><a href="#">Mega Menu Item 2</a></li>
-                                        <li><a href="#">Mega Menu Item 3</a></li>
-                                        <li><a href="#">Mega Menu Item 4</a></li>
-                                        <li><a href="#">Mega Menu Item 5</a></li>
-                                    </ul>
-                                    <ul class="single-mega cn-col-4">
-                                        <li class="title">Headline 3</li>
-                                        <li><a href="#">Mega Menu Item 1</a></li>
-                                        <li><a href="#">Mega Menu Item 2</a></li>
-                                        <li><a href="#">Mega Menu Item 3</a></li>
-                                        <li><a href="#">Mega Menu Item 4</a></li>
-                                        <li><a href="#">Mega Menu Item 5</a></li>
-                                    </ul>
-                                    <ul class="single-mega cn-col-4">
-                                        <li class="title">Headline 4</li>
-                                        <li><a href="#">Mega Menu Item 1</a></li>
-                                        <li><a href="#">Mega Menu Item 2</a></li>
-                                        <li><a href="#">Mega Menu Item 3</a></li>
-                                        <li><a href="#">Mega Menu Item 4</a></li>
-                                        <li><a href="#">Mega Menu Item 5</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="{{ url('/') }}">Home</a></li>
+                            <li><a href="{{ route('about') }}">About Us</a></li>
+                            <li><a href="{{ route('properties') }}">Properties</a></li>
+                            <li><a href="{{ route('blog') }}">Blog</a></li>
+                            <li><a href="{{ route('contact') }}">Contact</a></li>
                         </ul>
 
                         <!-- Search Form -->
