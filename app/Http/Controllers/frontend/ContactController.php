@@ -9,6 +9,11 @@ class ContactController extends Controller
 {
     public function index()
     {
-        return view('');
+        $data = [
+            'title'     => 'Contact',
+            'breadcumb' => 'Contact'
+        ];
+
+        return view('frontend.pages.contact.contact', $data);
     }
 }

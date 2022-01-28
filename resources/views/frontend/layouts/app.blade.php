@@ -42,7 +42,7 @@
 
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
     @include('frontend.include.scripts')
-    @stack('scripts')
+
 </body>
 
 </html>
