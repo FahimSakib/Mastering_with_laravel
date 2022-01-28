@@ -42,11 +42,11 @@
                     <!-- Nav Start -->
                     <div class="classynav">
                         <ul>
-                            <li><a href="{{ url('/') }}">Home</a></li>
-                            <li><a href="{{ route('about') }}">About Us</a></li>
-                            <li><a href="{{ route('properties') }}">Properties</a></li>
-                            <li><a href="{{ route('blog') }}">Blog</a></li>
-                            <li><a href="{{ route('contact') }}">Contact</a></li>
+                            <li><a class="{{ (request()->is('/')) ? 'menu-active' : '' }}" href="{{ url('/') }}">Home</a></li>
+                            <li><a class="{{ (request()->is('about')) ? 'menu-active' : '' }}" href="{{ route('about') }}">About Us</a></li>
+                            <li><a class="{{ (request()->is('properties')) ? 'menu-active' : '' }}" href="{{ route('properties') }}">Properties</a></li>
+                            <li><a class="{{ (request()->is('blog')) ? 'menu-active' : '' }}" href="{{ route('blog') }}">Blog</a></li>
+                            <li><a class="{{ (request()->is('contact')) ? 'menu-active' : '' }}" href="{{ route('contact') }}">Contact</a></li>
                         </ul>
 
                         <!-- Search Form -->
