@@ -9,6 +9,11 @@ class BlogController extends Controller
 {
     public function index()
     {
-        return view('');
+        $data = [
+            'title'     => 'Blog',
+            'breadcumb' => 'Blog'
+        ];
+
+        return view('frontend.pages.blog.blog', $data);
     }
 }
