@@ -9,6 +9,11 @@ class PropertiesController extends Controller
 {
     public function index()
     {
-        return view('');
+        $data = [
+            'title'     => 'Properties',
+            'breadcumb' => 'Properties'
+        ];
+
+        return view('frontend.pages.properties.properties', $data);
     }
 }
