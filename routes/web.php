@@ -23,5 +23,19 @@ Route::get('contact', 'frontend\ContactController@index')->name('contact');
 
 // End Frontend Routes
 
+// Bacckend Routes:
+
+Route::group(['prefix' => 'admin', 'as' => 'admin'], function(){
+    Route::get('/', 'Backend\DashboardController@index');
+    Route::get('about', 'Backend\AboutController@index')->name('about');
+    Route::get('properties', 'Backend\PropertiesController@index')->name('properties');
+    Route::get('blog', 'Backend\BlogController@index')->name('blog');
+    Route::get('contact', 'Backend\ContactController@index')->name('contact');
+    Route::get('login', 'Backend\LogInController@index')->name('login');
+
+});
+
+// End Bacckend Routes
+
 
 
